@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing Geist
+summary: "I'm happy to announce a new Real Project at Keio Media Design called Geist"
 ---
 I'm happy to announce a new Real Project at Keio Media Design called "Geist". 
 

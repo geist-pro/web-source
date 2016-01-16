@@ -2,7 +2,14 @@
 layout: default
 title: Home
 ---
-
+<div class="feature">
+    <h2> Featured</h2>
+    Talk from the 31C3 giving a good overview about one of our research directions:
+    <b>Eyewear Computing</b>.
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/5-chhJ6GLg0" frameborder="0" allowfullscreen></iframe> 
+</div>
+<div/>
+    <br>
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -11,10 +18,9 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
-
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    {{ post.summary }}
   </div>
   {% endfor %}
 </div>
