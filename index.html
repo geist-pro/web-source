@@ -2,17 +2,12 @@
 layout: default
 title: Home
 ---
-<div class="feature">
-    <h2> Featured</h2>
-    Talk from the 31C3 giving a good overview about one of our research directions:
-    <b>Eyewear Computing</b>.
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/5-chhJ6GLg0" frameborder="0" allowfullscreen></iframe> 
-</div>
-<div/>
-    <br>
+{% include featured.html %}
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
+    <span><img class="gs-post-icon" src="/images/icons/document.svg"></span>
     <h1 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}
@@ -27,17 +22,17 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">← Previous</a>
   {% else %}
-    <span class="pagination-item older">Older</span>
+    <!-- <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">← Previous</a> -->
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Next →</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Next →</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <!-- <a class="pagination-item newer" href="{{ site.baseurl }}">Next →</a> -->
   {% endif %}
 </div>

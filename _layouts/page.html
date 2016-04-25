@@ -3,6 +3,15 @@ layout: default
 ---
 
 <div class="page">
+  {% if page.type == 'about' %}
+    <span><img class="gs-post-icon" src="/images/icons/information.svg"></span>
+  {% elsif page.type == 'members' %}
+    <span><img class="gs-post-icon" src="/images/icons/people.svg"></span>
+  {% elsif page.type == 'projects' %}
+    <span><img class="gs-post-icon" src="/images/icons/projector.svg"></span>
+  {% elsif page.type == 'publications' %}
+    <span><img class="gs-post-icon" src="/images/icons/publication.svg"></span>
+  {% endif %}
   <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
 </div>
