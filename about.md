@@ -1,9 +1,10 @@
 ---
 layout: page
 title: About
+type: about
 ---
 
-## GEIST :: MIND <img style="float: right;" src="{{ site.url }}images/logo_nt.svg">
+## GEIST :: MIND <img style="float: right;" src="/images/logo_nt.svg">
 
 Geist has two connotations. First, it's a "Real Project" at the Graduate School of Media Design, Keio University. Second, Geist is a virtual institute and non-profit organisation dedicated to augmenting the human mind, including members from diverse backgrounds.
 
@@ -21,9 +22,3 @@ Keio University (KMD)
 4-1-1 Hiyoshi, Kohoku-ku, Yokohama 223-8526, JAPAN
 
 phone: +81-45-564-2578
-
-
-
-
-
-
